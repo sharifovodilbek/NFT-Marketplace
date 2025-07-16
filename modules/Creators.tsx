@@ -22,10 +22,10 @@ const Creators: FC<ArtistPageType> = ({ artists }) => {
                         <Heading classList='!mb-[10px]' tag='h2'>Top creators</Heading>
                         <Text classList='!text-white !text-[22px]'>Checkout Top Rated Creators on the NFT Marketplace</Text>
                     </div>
-                    <Button type='button' variant='outlined' icon={<RocketIcon/>} iconPostion='left' title='View Rankings'/>
+                    <Button type='button' variant='outlined' icon={<RocketIcon />} iconPostion='left' title='View Rankings' />
                 </div>
                 <div className='flex flex-wrap justify-between gap-[30px]'>
-                    {artistsList?.data.map((item:ArtistType, index:number) => <ArtistsCard key={item.id} item={item} index={index}/>)}
+                    {artistsList?.data.map((item: ArtistType, index: number) => <ArtistsCard key={item.id} item={item} index={index} />)}
                 </div>
             </div>
         </section>

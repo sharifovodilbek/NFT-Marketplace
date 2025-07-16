@@ -12,16 +12,16 @@ import Image from 'next/image'
 import React, { FC } from 'react'
 
 interface HeroType {
-  actions:{data:AuctionType[], meta:MetaType},
-  artists:{data:ArtistType[], meta:MetaType},
-  actionResults:{data:any[], meta:MetaType}
+  actions: { data: AuctionType[], meta: MetaType },
+  artists: { data: ArtistType[], meta: MetaType },
+  actionResults: { data: any[], meta: MetaType }
 }
 
-const Hero:FC<HeroType> = ({actions, artists, actionResults}) => {
+const Hero: FC<HeroType> = ({ actions, artists, actionResults }) => {
   const t = useTranslations("HeroContent")
-  const {data:actionsList, isLoading:actionLoading} = getQueryData("/auctions", actions,'auctions')
-  const {data:artistsList, isLoading:artistLoading} = getQueryData("/user?role=ARTIST", artists,'artist')
-  const {data:actionResultsList, isLoading:actionResultsLoading} = getQueryData("/auction-result", actionResults,'auction-results')
+  const { data: actionsList, isLoading: actionLoading } = getQueryData("/auctions", actions, 'auctions')
+  const { data: artistsList, isLoading: artistLoading } = getQueryData("/user?role=ARTIST", artists, 'artist')
+  const { data: actionResultsList, isLoading: actionResultsLoading } = getQueryData("/auction-result", actionResults, 'auction-results')
   return (
     <section className='py-[80px]'>
       <div className='containers  flex flex-col md:flex-row gap-[10px] justify-between'>
