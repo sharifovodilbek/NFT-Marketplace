@@ -13,7 +13,7 @@ const Header = () => {
         <Link href={'/'}>
           <Image className="w-[182px] h-[24px] lg:w-[243px] lg:h-[32px] " priority src={"/site-logo.svg"} alt="Site Logo" width={243} height={32} />
         </Link>
-        <nav className="hidden lg:flex items-center gap-2.5">
+        <nav className=" lg:flex items-center gap-2.5">
           <Link className="text-[14px] font-semibold text-[#FFFFFF] inline-block py-3 px-5" href={'/marketplace'}>{t("navItem1")}</Link>
           <Link className="text-[14px] font-semibold text-[#FFFFFF] inline-block py-3 px-5" href={'/rankings'}>{t("navItem2")}</Link>
           <Link className="text-[14px] font-semibold text-[#FFFFFF] inline-block py-3 px-5" href={'/connect-wallet'}>{t("navItem3")}</Link>
