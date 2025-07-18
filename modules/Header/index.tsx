@@ -1,5 +1,5 @@
 import { MenuIcon, UserIcon } from "@/assets/icons"
-import Button from "@/components/Button"
+import { Button } from "@/components"
 import Image from "next/image"
 import LangConfig from "./LangConfig"
 import { Link } from "@/i18n/navigation"

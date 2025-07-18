@@ -1,4 +1,3 @@
-import { getCookie } from 'cookies-next'
 import React, { ReactNode } from 'react'
 
 const Heading = ({children,classList, tag}:{children:ReactNode, classList?:string, tag:"h1" | "h2" | "h3"}) => {
